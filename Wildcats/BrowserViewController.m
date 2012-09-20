@@ -10,9 +10,14 @@
 
 @interface BrowserViewController ()
 
+@property (nonatomic, strong) NSURL *url;
+@property (nonatomic, strong) IBOutlet UIWebView *browserWebView;
+
 @end
 
 @implementation BrowserViewController
+@synthesize url;
+@synthesize browserWebView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,10 +28,25 @@
     return self;
 }
 
+-(id)initWithURL:(NSURL *)initURL{
+    self = [super initWithNibName:@"BrowserViewController" bundle:nil];
+    if (self) {
+        self.url = initURL;
+    }
+    
+    return self;
+}
+
+-(void)awakeFromNib{
+    [super awakeFromNib];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    NSURLRequest *request = [NSURLRequest requestWithURL:self.url];
+    [self.browserWebView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning

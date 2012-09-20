@@ -10,4 +10,6 @@
 
 @interface BrowserViewController : UIViewController
 
+-(id)initWithURL:(NSURL *)initURL;
+
 @end

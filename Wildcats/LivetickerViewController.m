@@ -44,6 +44,7 @@
     [self.navigationItem setTitle:@"Liveticker"];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://www.sis-handball.de/live/hbvf/?liga=001512000000000000000000000000000011000"]];
     [webView loadRequest:request];
+    
     UIBarButtonItem *refreshItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshWebView:)];
     [self.navigationItem setRightBarButtonItem:refreshItem];
     

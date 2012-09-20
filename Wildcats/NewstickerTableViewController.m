@@ -26,14 +26,10 @@
 
 - (void)viewDidLoad
 {
-    [FlurryAnalytics logEvent:@"News"];
     [super viewDidLoad];
+    [FlurryAnalytics logEvent:@"News"];
+    self.title = @"News";
     
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -150,7 +146,7 @@
    } else{
         NewsDetailTableViewController *detailViewController = [[NewsDetailTableViewController alloc] initWithStyle:UITableViewStylePlain];
         [self.navigationController pushViewController:detailViewController animated:YES];
-       [detailViewController.navigationItem setTitle:[[posts objectAtIndex:indexPath.row] objectForKey:@"headline"]];
+        [detailViewController.navigationItem setTitle:[[posts objectAtIndex:indexPath.row] objectForKey:@"headline"]];
         [detailViewController setHeadline:[[posts objectAtIndex:indexPath.row] objectForKey:@"headline"]];
         [detailViewController setText:[[posts objectAtIndex:indexPath.row] objectForKey:@"article"]];
     }
@@ -169,12 +165,28 @@
 }
 
 -(void)parseXMLFileAtURL:(NSString *)URL{
-        posts = [[NSMutableArray alloc] init];
-        NSURL *xmlURL = [NSURL URLWithString:URL];
-        xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:xmlURL];
-        [xmlParser setDelegate:self];
-        [xmlParser parse];
-        //[xmlURL release];
+    posts = [[NSMutableArray alloc] init];
+    NSURL *xmlURL = [NSURL URLWithString:URL];
+    NSURLRequest *request = [NSURLRequest requestWithURL:xmlURL];
+    
+    [NSURLConnection sendAsynchronousRequest:request
+                                       queue:[[NSOperationQueue alloc] init]
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+                               if (!error) {
+                                   xmlParser = [[NSXMLParser alloc] initWithData:data];
+                                   [xmlParser setDelegate:self];
+                                   [xmlParser parse];
+                               } else{
+                                   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hinweis"
+                                                                                   message:@"Möglicherweise besteht gerade keine Internetverbindung."
+                                                                                  delegate:self
+                                                                         cancelButtonTitle:@""
+                                                                          otherButtonTitles:nil];
+                                   
+                                   [alert show];
+                               }
+        
+    }];
 }
     
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict{
