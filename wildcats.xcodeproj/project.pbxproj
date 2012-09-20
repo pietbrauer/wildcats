@@ -12,6 +12,8 @@
 		975B6F73139676DE00F58D60 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 975B6F72139676DE00F58D60 /* Default.png */; };
 		975B6F75139676E600F58D60 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 975B6F74139676E600F58D60 /* Default@2x.png */; };
 		97675889160B9B6500C2E398 /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97675887160B9B0F00C2E398 /* libFlurryAnalytics.a */; };
+		9767588E160B9CA000C2E398 /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9767588C160B9CA000C2E398 /* BrowserViewController.m */; };
+		9767588F160B9CA000C2E398 /* BrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9767588D160B9CA000C2E398 /* BrowserViewController.xib */; };
 		978EBA2814B8A8A600FE9481 /* NewsDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 978EBA2714B8A8A600FE9481 /* NewsDetailTableViewController.m */; };
 		978EBA3814B8B2F600FE9481 /* ChartDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 978EBA3714B8B2F600FE9481 /* ChartDetailTableViewController.m */; };
 		978EBA3B14B9A7AC00FE9481 /* InfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 978EBA3A14B9A7AC00FE9481 /* InfoTableViewController.m */; };
@@ -67,6 +69,9 @@
 		975B6F74139676E600F58D60 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		97675886160B9B0F00C2E398 /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
 		97675887160B9B0F00C2E398 /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
+		9767588B160B9CA000C2E398 /* BrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrowserViewController.h; path = Wildcats/BrowserViewController.h; sourceTree = SOURCE_ROOT; };
+		9767588C160B9CA000C2E398 /* BrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrowserViewController.m; path = Wildcats/BrowserViewController.m; sourceTree = SOURCE_ROOT; };
+		9767588D160B9CA000C2E398 /* BrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BrowserViewController.xib; path = Wildcats/BrowserViewController.xib; sourceTree = SOURCE_ROOT; };
 		978CFBFA14BB6C0F00E21DD7 /* icon_time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_time.png; path = ../../../Frameworks/iPhone_toolbar_icons/icon_time.png; sourceTree = "<group>"; };
 		978EBA2614B8A8A600FE9481 /* NewsDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsDetailTableViewController.h; path = Wildcats/NewsDetailTableViewController.h; sourceTree = SOURCE_ROOT; };
 		978EBA2714B8A8A600FE9481 /* NewsDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsDetailTableViewController.m; path = Wildcats/NewsDetailTableViewController.m; sourceTree = SOURCE_ROOT; };
@@ -150,6 +155,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9767588A160B9C8400C2E398 /* BrowserTemp */ = {
+			isa = PBXGroup;
+			children = (
+				9767588B160B9CA000C2E398 /* BrowserViewController.h */,
+				9767588C160B9CA000C2E398 /* BrowserViewController.m */,
+				9767588D160B9CA000C2E398 /* BrowserViewController.xib */,
+			);
+			name = BrowserTemp;
+			sourceTree = "<group>";
+		};
 		978EBA3D14B9BA9800FE9481 /* Liveticker */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +224,7 @@
 		97C574C41396714B005543A0 /* wildcats */ = {
 			isa = PBXGroup;
 			children = (
+				9767588A160B9C8400C2E398 /* BrowserTemp */,
 				97C574D813967155005543A0 /* Global */,
 				97C574DB13967162005543A0 /* News */,
 				97C574DC13967177005543A0 /* Chart */,
@@ -422,6 +438,7 @@
 				9797E19713992E4200C9BD26 /* Banner4@2x.png in Resources */,
 				9724DA2913F3C20F003CD336 /* TeamImages.bundle in Resources */,
 				978EBA4514B9BCE000FE9481 /* LivetickerViewController.xib in Resources */,
+				9767588F160B9CA000C2E398 /* BrowserViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +463,7 @@
 				978EBA3814B8B2F600FE9481 /* ChartDetailTableViewController.m in Sources */,
 				978EBA3B14B9A7AC00FE9481 /* InfoTableViewController.m in Sources */,
 				978EBA4414B9BCE000FE9481 /* LivetickerViewController.m in Sources */,
+				9767588E160B9CA000C2E398 /* BrowserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
