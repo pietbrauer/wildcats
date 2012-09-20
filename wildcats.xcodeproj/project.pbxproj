@@ -11,6 +11,7 @@
 		975B6F5D1396764400F58D60 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 975B6F5C1396764400F58D60 /* QuartzCore.framework */; };
 		975B6F73139676DE00F58D60 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 975B6F72139676DE00F58D60 /* Default.png */; };
 		975B6F75139676E600F58D60 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 975B6F74139676E600F58D60 /* Default@2x.png */; };
+		97675885160B9A2000C2E398 /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97675884160B9A2000C2E398 /* libFlurryAnalytics.a */; };
 		978CFBFB14BB6C0F00E21DD7 /* icon_time.png in Resources */ = {isa = PBXBuildFile; fileRef = 978CFBFA14BB6C0F00E21DD7 /* icon_time.png */; };
 		978EBA2814B8A8A600FE9481 /* NewsDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 978EBA2714B8A8A600FE9481 /* NewsDetailTableViewController.m */; };
 		978EBA3814B8B2F600FE9481 /* ChartDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 978EBA3714B8B2F600FE9481 /* ChartDetailTableViewController.m */; };
@@ -31,7 +32,6 @@
 		9797E19513992E4200C9BD26 /* Banner3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9797E18D13992E4200C9BD26 /* Banner3@2x.png */; };
 		9797E19613992E4200C9BD26 /* Banner4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9797E18E13992E4200C9BD26 /* Banner4.png */; };
 		9797E19713992E4200C9BD26 /* Banner4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9797E18F13992E4200C9BD26 /* Banner4@2x.png */; };
-		97B2C28E14C5E5B800E6AA89 /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B2C28D14C5E5B800E6AA89 /* libFlurryAnalytics.a */; };
 		97C574BF1396714B005543A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C574BE1396714B005543A0 /* UIKit.framework */; };
 		97C574C31396714B005543A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C574C21396714B005543A0 /* CoreGraphics.framework */; };
 		97C574C91396714B005543A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97C574C71396714B005543A0 /* InfoPlist.strings */; };
@@ -66,6 +66,8 @@
 		975B6F5C1396764400F58D60 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		975B6F72139676DE00F58D60 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		975B6F74139676E600F58D60 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		97675883160B9A2000C2E398 /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlurryAnalytics.h; path = "../../../piet/Downloads/Flurry iPhone SDK v3.1.2/FlurryAnalytics/FlurryAnalytics.h"; sourceTree = "<group>"; };
+		97675884160B9A2000C2E398 /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurryAnalytics.a; path = "../../../piet/Downloads/Flurry iPhone SDK v3.1.2/FlurryAnalytics/libFlurryAnalytics.a"; sourceTree = "<group>"; };
 		978CFBFA14BB6C0F00E21DD7 /* icon_time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_time.png; path = ../../../Frameworks/iPhone_toolbar_icons/icon_time.png; sourceTree = "<group>"; };
 		978EBA2614B8A8A600FE9481 /* NewsDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsDetailTableViewController.h; path = Wildcats/NewsDetailTableViewController.h; sourceTree = SOURCE_ROOT; };
 		978EBA2714B8A8A600FE9481 /* NewsDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsDetailTableViewController.m; path = Wildcats/NewsDetailTableViewController.m; sourceTree = SOURCE_ROOT; };
@@ -90,8 +92,6 @@
 		9797E18D13992E4200C9BD26 /* Banner3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Banner3@2x.png"; sourceTree = "<group>"; };
 		9797E18E13992E4200C9BD26 /* Banner4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Banner4.png; sourceTree = "<group>"; };
 		9797E18F13992E4200C9BD26 /* Banner4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Banner4@2x.png"; sourceTree = "<group>"; };
-		97B2C28C14C5E5B800E6AA89 /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlurryAnalytics.h; path = Wildcats/FlurryAnalytics/FlurryAnalytics.h; sourceTree = SOURCE_ROOT; };
-		97B2C28D14C5E5B800E6AA89 /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurryAnalytics.a; path = Wildcats/FlurryAnalytics/libFlurryAnalytics.a; sourceTree = SOURCE_ROOT; };
 		97C574BA1396714B005543A0 /* wildcats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wildcats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C574BE1396714B005543A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		97C574C21396714B005543A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -144,7 +144,7 @@
 				97C57555139674B3005543A0 /* SystemConfiguration.framework in Frameworks */,
 				97C574BF1396714B005543A0 /* UIKit.framework in Frameworks */,
 				97C574C31396714B005543A0 /* CoreGraphics.framework in Frameworks */,
-				97B2C28E14C5E5B800E6AA89 /* libFlurryAnalytics.a in Frameworks */,
+				97675885160B9A2000C2E398 /* libFlurryAnalytics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +154,8 @@
 		97347FB914196CA2007ECED9 /* FlurryAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				97B2C28C14C5E5B800E6AA89 /* FlurryAnalytics.h */,
-				97B2C28D14C5E5B800E6AA89 /* libFlurryAnalytics.a */,
+				97675883160B9A2000C2E398 /* FlurryAnalytics.h */,
+				97675884160B9A2000C2E398 /* libFlurryAnalytics.a */,
 			);
 			name = FlurryAnalytics;
 			path = "../../../../Downloads/Flurry iPhone SDK v3.0.0/FlurryAnalytics";
@@ -540,12 +540,13 @@
 				GCC_PREFIX_HEADER = "wildcats/wildcats-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "wildcats/wildcats-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Downloads/Flurry iPhone SDK v3.0.0/FlurryAnalytics\"",
 					"\"$(SRCROOT)/Wildcats/FlurryAnalytics\"",
 					"\"$(SRCROOT)/../../../Downloads/Flurry iPhone SDK v3.0.6/FlurryAnalytics\"",
+					"\"$(SRCROOT)/../../Downloads/Flurry iPhone SDK v3.1.2/FlurryAnalytics\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -572,12 +573,13 @@
 				GCC_PREFIX_HEADER = "wildcats/wildcats-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "wildcats/wildcats-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Downloads/Flurry iPhone SDK v3.0.0/FlurryAnalytics\"",
 					"\"$(SRCROOT)/Wildcats/FlurryAnalytics\"",
 					"\"$(SRCROOT)/../../../Downloads/Flurry iPhone SDK v3.0.6/FlurryAnalytics\"",
+					"\"$(SRCROOT)/../../Downloads/Flurry iPhone SDK v3.1.2/FlurryAnalytics\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

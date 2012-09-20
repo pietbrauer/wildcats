@@ -208,72 +208,72 @@
     }
     
     //Set Home Team Image
-     if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:[NSString stringWithString:@"BSV Sachsen Zwickau"]]){
+     if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:@"BSV Sachsen Zwickau"]){
         [detailViewController.imageHome setImage:[UIImage imageNamed:@"TeamImages.bundle/BSV_Sachsen_Zwickau.png"]];
-    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:[NSString stringWithString:@"BVB Dortmund Handball"]]){
+    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:@"BVB Dortmund Handball"]){
         [detailViewController.imageHome setImage:[UIImage imageNamed:@"TeamImages.bundle/BVB_Dortmund_Handball.png"]];
-    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:[NSString stringWithString:@"HSG Bensheim Auerbach"]]){
+    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:@"HSG Bensheim Auerbach"]){
         [detailViewController.imageHome setImage:[UIImage imageNamed:@"TeamImages.bundle/HSG_Bensheim_Auerbach.png"]];
-    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:[NSString stringWithString:@"MTV 1860 Altlandsberg"]]){
+    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:@"MTV 1860 Altlandsberg"]){
         [detailViewController.imageHome setImage:[UIImage imageNamed:@"TeamImages.bundle/MTV_Altlandsberg.png"]];
-    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:[NSString stringWithString:@"SC Greven 09"]]){
+    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:@"SC Greven 09"]){
         [detailViewController.imageHome setImage:[UIImage imageNamed:@"TeamImages.bundle/SC_Greven_09.png"]];
-    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:[NSString stringWithString:@"SG BBM Bietigheim"]]){
+    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:@"SG BBM Bietigheim"]){
         [detailViewController.imageHome setImage:[UIImage imageNamed:@"TeamImages.bundle/SG_BBM_Bietigheim.png"]];
-    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:[NSString stringWithString:@"SGH Rosengarten-Buchholz"]]){
+    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:@"SGH Rosengarten-Buchholz"]){
         [detailViewController.imageHome setImage:[UIImage imageNamed:@"TeamImages.bundle/SGH_Rosengarten-Buchholz.png"]];
-    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:[NSString stringWithString:@"SV UNION Halle-Neustadt"]]){
+    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:@"SV UNION Halle-Neustadt"]){
         [detailViewController.imageHome setImage:[UIImage imageNamed:@"TeamImages.bundle/SV_UNION_Halle-Neustadt.png"]];
-    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:[NSString stringWithString:@"TSG Ketsch"]]){
+    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:@"TSG Ketsch"]){
         [detailViewController.imageHome setImage:[UIImage imageNamed:@"TeamImages.bundle/TSG_Ketsch.png"]];
-    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:[NSString stringWithString:@"TSG Wismar"]]){
+    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:@"TSG Wismar"]){
         [detailViewController.imageHome setImage:[UIImage imageNamed:@"TeamImages.bundle/TSG_Wismar.png"]];
-    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:[NSString stringWithString:@"TSV Nord Harrislee"]]){
+    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:@"TSV Nord Harrislee"]){
         [detailViewController.imageHome setImage:[UIImage imageNamed:@"TeamImages.bundle/TSV_Nord_Harrislee.png"]];
-    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:[NSString stringWithString:@"TSV Travemünde"]]){
+    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:@"TSV Travemünde"]){
         [detailViewController.imageHome setImage:[UIImage imageNamed:@"TeamImages.bundle/TSV_Travemünde.png"]];
-    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:[NSString stringWithString:@"TuS Metzingen"]]){
+    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:@"TuS Metzingen"]){
         [detailViewController.imageHome setImage:[UIImage imageNamed:@"TeamImages.bundle/TuS_Metzingen.png"]];
-    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:[NSString stringWithString:@"TuS Weibern 1920 e.V."]]){
+    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:@"TuS Weibern 1920 e.V."]){
         [detailViewController.imageHome setImage:[UIImage imageNamed:@"TeamImages.bundle/TuS_Weibern.png"]];
-    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:[NSString stringWithString:@"TV Nellingen"]]){
+    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:@"TV Nellingen"]){
         [detailViewController.imageHome setImage:[UIImage imageNamed:@"TeamImages.bundle/TV_Nellingen.png"]];
-    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:[NSString stringWithString:@"VFL Wolfsburg"]]){
+    } if ([[[detailViewController.labelHome text] substringWithRange:NSMakeRange(0, [[detailViewController.labelHome text] length]-1)] isEqualToString:@"VFL Wolfsburg"]){
         [detailViewController.imageHome setImage:[UIImage imageNamed:@"TeamImages.bundle/VFL_Wolfsburg.png"]];
     }
      
     //set guestTeam Image
-    if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:[NSString stringWithString:@"BSV Sachsen Zwickau"]]){
+    if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:@"BSV Sachsen Zwickau"]){
         [detailViewController.imageGuest setImage:[UIImage imageNamed:@"TeamImages.bundle/BSV_Sachsen_Zwickau.png"]];
-    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:[NSString stringWithString:@"BVB Dortmund Handball"]]){
+    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:@"BVB Dortmund Handball"]){
         [detailViewController.imageGuest setImage:[UIImage imageNamed:@"TeamImages.bundle/BVB_Dortmund_Handball.png"]];
-    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:[NSString stringWithString:@"HSG Bensheim/Auerbach"]]){
+    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:@"HSG Bensheim/Auerbach"]){
         [detailViewController.imageGuest setImage:[UIImage imageNamed:@"TeamImages.bundle/HSG_Bensheim_Auerbach.png"]];
-    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:[NSString stringWithString:@"MTV 1860 Altlandsberg"]]){
+    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:@"MTV 1860 Altlandsberg"]){
         [detailViewController.imageGuest setImage:[UIImage imageNamed:@"TeamImages.bundle/MTV_Altlandsberg.png"]];
-    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:[NSString stringWithString:@"SC Greven 09"]]){
+    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:@"SC Greven 09"]){
         [detailViewController.imageGuest setImage:[UIImage imageNamed:@"TeamImages.bundle/SC_Greven_09.png"]];
-    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:[NSString stringWithString:@"SG BBM Bietigheim"]]){
+    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:@"SG BBM Bietigheim"]){
         [detailViewController.imageGuest setImage:[UIImage imageNamed:@"TeamImages.bundle/SG_BBM_Bietigheim.png"]];
-    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:[NSString stringWithString:@"SGH Rosengarten-Buchholz"]]){
+    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:@"SGH Rosengarten-Buchholz"]){
         [detailViewController.imageGuest setImage:[UIImage imageNamed:@"TeamImages.bundle/SGH_Rosengarten-Buchholz.png"]];
-    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:[NSString stringWithString:@"SV UNION Halle-Neustadt"]]){
+    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:@"SV UNION Halle-Neustadt"]){
         [detailViewController.imageGuest setImage:[UIImage imageNamed:@"TeamImages.bundle/SV_UNION_Halle-Neustadt.png"]];
-    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:[NSString stringWithString:@"TSG Ketsch"]]){
+    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:@"TSG Ketsch"]){
         [detailViewController.imageGuest setImage:[UIImage imageNamed:@"TeamImages.bundle/TSG_Ketsch.png"]];
-    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:[NSString stringWithString:@"TSG Wismar"]]){
+    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:@"TSG Wismar"]){
         [detailViewController.imageGuest setImage:[UIImage imageNamed:@"TeamImages.bundle/TSG_Wismar.png"]];
-    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:[NSString stringWithString:@"TSV Nord Harrislee"]]){
+    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:@"TSV Nord Harrislee"]){
         [detailViewController.imageGuest setImage:[UIImage imageNamed:@"TeamImages.bundle/TSV_Nord_Harrislee.png"]];
-    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:[NSString stringWithString:@"TSV Travemünde"]]){
+    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:@"TSV Travemünde"]){
         [detailViewController.imageGuest setImage:[UIImage imageNamed:@"TeamImages.bundle/TSV_Travemünde.png"]];
-    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:[NSString stringWithString:@"TuS Metzingen"]]){
+    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:@"TuS Metzingen"]){
         [detailViewController.imageGuest setImage:[UIImage imageNamed:@"TeamImages.bundle/TuS_Metzingen.png"]];
-    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:[NSString stringWithString:@"TuS Weibern 1920 e.V."]]){
+    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:@"TuS Weibern 1920 e.V."]){
         [detailViewController.imageGuest setImage:[UIImage imageNamed:@"TeamImages.bundle/TuS_Weibern.png"]];
-    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:[NSString stringWithString:@"TV Nellingen"]]){
+    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:@"TV Nellingen"]){
         [detailViewController.imageGuest setImage:[UIImage imageNamed:@"TeamImages.bundle/TV_Nellingen.png"]];
-    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:[NSString stringWithString:@"VFL Wolfsburg"]]){
+    } if ([[[detailViewController.labelGuest text] substringWithRange:NSMakeRange(0, [[detailViewController.labelGuest text] length]-1)] isEqualToString:@"VFL Wolfsburg"]){
         [detailViewController.imageGuest setImage:[UIImage imageNamed:@"TeamImages.bundle/VFL_Wolfsburg.png"]];
     }
     

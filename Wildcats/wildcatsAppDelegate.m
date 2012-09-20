@@ -60,7 +60,7 @@
         if ([[device.systemVersion substringFromIndex:1] intValue] < 5 ) {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upgrade" message:@"Diese App wurde auf iOS 5 optimiert. Bitte aktualisieren Sie Ihr Telefon auf die neueste Systemversion mithilfe von iTunes." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alert show];
-            [prefs setObject:[NSString stringWithString:@"1"] forKey:@"wildcats_alert_dialog"];
+            [prefs setObject:@"1" forKey:@"wildcats_alert_dialog"];
             [prefs synchronize];
         }
     }
