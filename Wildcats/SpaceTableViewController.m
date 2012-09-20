@@ -14,14 +14,21 @@
 @implementation SpaceTableViewController
 @synthesize spaceCell, spaceDetailView;
 
-
+-(id)initWithStyle:(UITableViewStyle)style{
+    self = [super initWithStyle:style];
+    
+    if (self) {
+        self.title = @"Spielorte";
+    }
+    
+    return self;
+}
 
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
 }
 

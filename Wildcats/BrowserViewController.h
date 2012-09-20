@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BrowserViewController : UIViewController
+@interface BrowserViewController : UIViewController <UIWebViewDelegate>
 
 -(id)initWithURL:(NSURL *)initURL;
+-(id)initWithScript:(NSString *)initScript andTitle:(NSString *)name;
 
 @end

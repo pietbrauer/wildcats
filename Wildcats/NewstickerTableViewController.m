@@ -16,6 +16,15 @@
 //@synthesize newsCell;
 @synthesize newstickerDetailView;
 
+-(id)initWithStyle:(UITableViewStyle)style{
+    self = [super initWithStyle:style];
+    
+    if (self) {
+        self.title = @"News";
+    }
+    
+    return self;
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -28,7 +37,7 @@
 {
     [super viewDidLoad];
     [FlurryAnalytics logEvent:@"News"];
-    self.title = @"News";
+
     
 }
 
