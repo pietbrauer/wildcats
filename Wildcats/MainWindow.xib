@@ -61,6 +61,7 @@
 				<bool key="IBUIResizesToFullScreen">YES</bool>
 			</object>
 			<object class="IBUITabBarController" id="1030380747">
+				<bool key="IBUIAutoresizesArchivedViewToFullSize">NO</bool>
 				<object class="IBUISimulatedTabBarMetrics" key="IBUISimulatedBottomBarMetrics"/>
 				<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 					<int key="IBUIInterfaceOrientation">1</int>

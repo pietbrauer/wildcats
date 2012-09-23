@@ -39,4 +39,5 @@
 
 //@property (nonatomic, retain) IBOutlet UITableViewCell *newsCell;
 @property (nonatomic, strong) NewstickerDetailView *newstickerDetailView;
+@property (nonatomic, strong) NSMutableArray *posts;
 @end

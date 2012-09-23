@@ -60,7 +60,7 @@
     NSLog(@"Index: %i",self.tabBarController.selectedIndex);
     UIView *adView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height-40-49, self.view.frame.size.width, 40)];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setFrame:CGRectMake(0, 392, 320, 40)];
+    [button setFrame:adView.frame];
     [self.navigationBar setTintColor:[UIColor colorWithRed:172/255.0 green:7/255.0 blue:40/255.0 alpha:1]];
     
     

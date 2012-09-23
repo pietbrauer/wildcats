@@ -15,6 +15,7 @@
 @implementation NewstickerTableViewController
 //@synthesize newsCell;
 @synthesize newstickerDetailView;
+@synthesize posts;
 
 -(id)initWithStyle:(UITableViewStyle)style{
     self = [super initWithStyle:style];
@@ -55,7 +56,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    if ([posts count] == 0) {
+    if ([self.posts count] == 0) {
         [self loadNews:nil];
     }
     [super viewDidAppear:animated];
@@ -85,7 +86,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [posts count];
+    return [self.posts count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -116,11 +117,11 @@
     //parsing data out of XML & Change the Cell Size dynamicly
     cell.textLabel.text = [[posts objectAtIndex:indexPath.row] objectForKey:@"headline"];
 	cell.textLabel.font = [UIFont boldSystemFontOfSize:17];
-	cell.textLabel.numberOfLines = ceilf([[[posts objectAtIndex:indexPath.row] objectForKey:@"headline"] sizeWithFont:[UIFont boldSystemFontOfSize:18] constrainedToSize:CGSizeMake(290, MAXFLOAT) lineBreakMode:UILineBreakModeWordWrap].height/20.0);
+	cell.textLabel.numberOfLines = ceilf([[[self.posts objectAtIndex:indexPath.row] objectForKey:@"headline"] sizeWithFont:[UIFont boldSystemFontOfSize:18] constrainedToSize:CGSizeMake(290, MAXFLOAT) lineBreakMode:UILineBreakModeWordWrap].height/20.0);
     
-	cell.detailTextLabel.text = [[posts objectAtIndex:indexPath.row] objectForKey:@"teaser"];
+	cell.detailTextLabel.text = [[self.posts objectAtIndex:indexPath.row] objectForKey:@"teaser"];
 	cell.detailTextLabel.font = [UIFont systemFontOfSize:13];
-	cell.detailTextLabel.numberOfLines = ceilf([[[posts objectAtIndex:indexPath.row] objectForKey:@"teaser"] sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(290, MAXFLOAT) lineBreakMode:UILineBreakModeWordWrap].height/20.0);
+	cell.detailTextLabel.numberOfLines = ceilf([[[self.posts objectAtIndex:indexPath.row] objectForKey:@"teaser"] sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(290, MAXFLOAT) lineBreakMode:UILineBreakModeWordWrap].height/20.0);
     
     return cell;
 }
@@ -131,17 +132,8 @@
 	NSString *detailString = [[posts objectAtIndex:indexPath.row] objectForKey:@"teaser"];
 	CGSize titleSize = [titleString sizeWithFont:[UIFont boldSystemFontOfSize:17] constrainedToSize:CGSizeMake(290, MAXFLOAT) lineBreakMode:UILineBreakModeWordWrap];
 	CGSize detailSize = [detailString sizeWithFont:[UIFont systemFontOfSize:13] constrainedToSize:CGSizeMake(290, MAXFLOAT) lineBreakMode:UILineBreakModeWordWrap];
-
+    
     return detailSize.height+titleSize.height+10;
-}
-
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return NO;
-}
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return NO;
 }
 
 #pragma mark - Table view delegate
@@ -168,7 +160,6 @@
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     //URL to XML Direction
     NSString *path = @"http://www.union-halle.net/news.xml.php";
-    //NSString *path = @"http://beta.nerdishbynature.com/news.xml";
     [self parseXMLFileAtURL:path];
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 }

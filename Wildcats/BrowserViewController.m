@@ -64,7 +64,6 @@
         [self.browserWebView loadHTMLString:self.htmlString baseURL:nil];
     }
     
-    
 }
 
 - (void)didReceiveMemoryWarning

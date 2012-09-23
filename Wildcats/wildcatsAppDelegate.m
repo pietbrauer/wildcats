@@ -27,7 +27,9 @@
 @synthesize window=_window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{    
+{
+    
+    [TestFlight takeOff:@"8b8072569c3a204d060dc40c27bfce45_NTY5NjMyMDEyLTAxLTI2IDA4OjI3OjAwLjMyODUwMg"];
     [FlurryAnalytics startSession:@"2PQ9122YGVNVL98AX817"];
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     [rootController setViewControllers:[self loadViewController]];
