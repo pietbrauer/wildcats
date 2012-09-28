@@ -57,7 +57,6 @@
 {
     [super viewDidLoad];
 
-    NSLog(@"Index: %i",self.tabBarController.selectedIndex);
     UIView *adView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height-40-49, self.view.frame.size.width, 40)];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setFrame:adView.frame];

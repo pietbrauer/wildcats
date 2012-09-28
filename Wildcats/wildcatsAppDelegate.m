@@ -62,21 +62,6 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    if (![[prefs objectForKey:@"wildcats_alert_dialog"] isEqualToString:@"1"]) {
-        
-        UIDevice *device = [UIDevice currentDevice];
-        
-        if ([[device.systemVersion substringFromIndex:1] intValue] < 5 ) {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upgrade" message:@"Diese App wurde auf iOS 5 optimiert. Bitte aktualisieren Sie Ihr Telefon auf die neueste Systemversion mithilfe von iTunes." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [alert show];
-            [prefs setObject:@"1" forKey:@"wildcats_alert_dialog"];
-            [prefs synchronize];
-        }
-    }
-    
-    
-
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
@@ -104,17 +89,17 @@
     UITabBarItem *newsItem = [[UITabBarItem alloc] initWithTitle:@"News" image:[UIImage imageNamed:@"NewsIcon.png"] tag:0];
     newsNavController.tabBarItem = newsItem;
     
-    SpaceTableViewController *spacesController = [[SpaceTableViewController alloc] initWithStyle:UITableViewStylePlain];
-    NavigationController *spacesNavController = [[NavigationController alloc] initWithRootViewController:spacesController];
-    UITabBarItem *spacesItem = [[UITabBarItem alloc] initWithTitle:@"Spielorte" image:[UIImage imageNamed:@"icon_spaces.png"] tag:0];
-    spacesNavController.tabBarItem = spacesItem;
+//    SpaceTableViewController *spacesController = [[SpaceTableViewController alloc] initWithStyle:UITableViewStylePlain];
+//    NavigationController *spacesNavController = [[NavigationController alloc] initWithRootViewController:spacesController];
+//    UITabBarItem *spacesItem = [[UITabBarItem alloc] initWithTitle:@"Spielorte" image:[UIImage imageNamed:@"icon_spaces.png"] tag:0];
+//    spacesNavController.tabBarItem = spacesItem;
     
     LivetickerViewController *livetickerController = [[LivetickerViewController alloc] initWithNibName:@"LivetickerViewController" bundle:nil];
     NavigationController *tickerNavController = [[NavigationController alloc] initWithRootViewController:livetickerController];
-    UITabBarItem *ticketItem = [[UITabBarItem alloc] initWithTitle:@"Liveticker" image:[UIImage imageNamed:@"icon_time.png"] tag:0];
+    UITabBarItem *ticketItem = [[UITabBarItem alloc] initWithTitle:@"Liveticker" image:[UIImage imageNamed:@"11-clock.png"] tag:0];
     tickerNavController.tabBarItem = ticketItem;
     
-    NSArray *array = @[scheduleNavController, tableNavController, newsNavController, spacesNavController, tickerNavController];
+    NSArray *array = @[scheduleNavController, tableNavController, newsNavController, tickerNavController];
     
     return array;
 }

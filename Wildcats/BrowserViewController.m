@@ -13,12 +13,15 @@
 @property (nonatomic, strong) NSURL *url;
 @property (nonatomic, strong) NSString *htmlString;
 @property (nonatomic, strong) IBOutlet UIWebView *browserWebView;
+@property (nonatomic, strong) NSTimer *timer;
 
 @end
 
 @implementation BrowserViewController
 @synthesize url;
+@synthesize htmlString;
 @synthesize browserWebView;
+@synthesize timer;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -57,13 +60,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:30 target:self selector:@selector(loadRequest) userInfo:0 repeats:YES];
+    
+}
+
+-(void)loadRequest{
+    NSLog(@"loadRequest");
     if (self.url) {
         NSURLRequest *request = [NSURLRequest requestWithURL:self.url];
         [self.browserWebView loadRequest:request];
     } else{
         [self.browserWebView loadHTMLString:self.htmlString baseURL:nil];
     }
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -79,6 +87,11 @@
         
     }
     return YES;
+}
+
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    [self.timer invalidate];
 }
 
 @end
