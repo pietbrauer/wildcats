@@ -56,12 +56,11 @@
     [super awakeFromNib];
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:30 target:self selector:@selector(loadRequest) userInfo:0 repeats:YES];
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
     
+    [self loadRequest];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:30 target:self selector:@selector(loadRequest) userInfo:0 repeats:YES];
 }
 
 -(void)loadRequest{
