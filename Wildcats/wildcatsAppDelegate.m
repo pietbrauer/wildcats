@@ -76,7 +76,7 @@
     //
     NSString *tableString = @"<script src=\"http://www.handball-world.com/o.red.c/extern/tablebox.php?gender=2&cstLiga=36&cstPhase=90&cstLang=1&cstCharset=1&width=300\" type=\"text/javascript\"></script>";
     
-    NSString *scheduleString = @"<script src=\"http://www.handball-world.com/o.red.c/extern/gamesbox.php?gender=2&cstLiga=36&cstLang=1&cstLmt=5&cstCharset=1&width=300\" type=\"text/javascript\"></script>";
+    NSString *scheduleString = @"<script src=\"http://www.handball-world.com/hbf/extern/gamesbox.php?gender=2&cstLiga=36&cstLang=1&cstLmt=10&cstCharset=1&width=300\" type=\"text/javascript\"></script>";
     
     BrowserViewController *scheduleViewController = [[BrowserViewController alloc] initWithScript:scheduleString andTitle:@"Spielplan"];
     NavigationController *scheduleNavController = [[NavigationController alloc] initWithRootViewController:scheduleViewController];
