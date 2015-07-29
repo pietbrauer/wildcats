@@ -66,7 +66,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9717339513E83F4400348FE8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "/Users/Piet/Dropbox/Xcode Workspace/wildcats/wildcats/de.lproj/InfoPlist.strings"; sourceTree = "<absolute>"; };
 		9724DA2813F3C20F003CD336 /* TeamImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TeamImages.bundle; sourceTree = "<group>"; };
 		97317A9A160F38AC0060E873 /* 11-clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "11-clock.png"; sourceTree = SOURCE_ROOT; };
 		975B6F5C1396764400F58D60 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -490,7 +489,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				97C574C81396714B005543A0 /* en */,
-				9717339513E83F4400348FE8 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
